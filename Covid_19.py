@@ -1,5 +1,5 @@
-import pandas as pd
-import matplotlib.pyplot as plt
+import pandas as pd         #pip install pandas
+import matplotlib.pyplot as plt         #pip install matplotlib
 import matplotlib.style
 import datetime
 data=pd.read_csv(r"D:\IFS\Corona Virus\country_wise_latest.csv")  #paste the path of the country_wise_latest.csv file dataset for further accessing
