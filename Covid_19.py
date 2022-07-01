@@ -2,8 +2,9 @@ import pandas as pd         #pip install pandas
 import matplotlib.pyplot as plt         #pip install matplotlib
 import matplotlib.style
 import datetime
-data=pd.read_csv(r"D:\IFS\Corona Virus\country_wise_latest.csv")  #paste the path of the country_wise_latest.csv file dataset for further accessing
+data=pd.read_csv(r"D:\GIThub\Covid_19\country_wise_latest.csv")  #paste the path of the country_wise_latest.csv file dataset for further accessing
 name=input("Enter the Country Name : ")
+name=name.capitalize()
 x=data[data.Region==name]["Confirmed"].values[0]
 y=data[data.Region==name]["Recovered"].values[0]
 z=data[data.Region==name]["Deaths"].values[0]
